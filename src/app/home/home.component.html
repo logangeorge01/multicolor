@@ -1,0 +1,14 @@
+<div class="color" [style.backgroundColor]="color"></div>
+<div class="count">Current count: {{count}}</div>
+<div class="count">Total count: {{(total$ | async).counter}}</div>
+<div class="outer">
+	<div class="wrap">
+		<div class="inner red" (click)="dislike()">👎</div>
+	</div>
+	<div class="wrap">
+		<div class="inner reset" (click)="reset()">🔄</div>
+	</div>
+	<div class="wrap">
+		<div class="inner green" (click)="like()">👍</div>
+	</div>
+</div>
